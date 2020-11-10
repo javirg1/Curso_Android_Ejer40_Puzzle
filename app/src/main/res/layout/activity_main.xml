@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textColor="?android:attr/colorFocusedHighlight"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/containerFilaCasillas">
+
+            <ImageView
+                android:id="@+id/iv0"
+                style="@style/casillaPuzle"
+                android:tag="0"
+                app:srcCompat="@drawable/img_0" />
+
+            <ImageView
+                android:id="@+id/iv1"
+                style="@style/casillaPuzle"
+                android:tag="1"
+                app:srcCompat="@drawable/img_1" />
+
+            <ImageView
+                android:id="@+id/iv2"
+                style="@style/casillaPuzle"
+                android:tag="2"
+                app:srcCompat="@drawable/img_2" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/containerFilaCasillas">
+
+            <ImageView
+                android:id="@+id/iv3"
+                style="@style/casillaPuzle"
+                android:tag="3"
+                app:srcCompat="@drawable/img_3" />
+
+            <ImageView
+                android:id="@+id/iv4"
+                style="@style/casillaPuzle"
+                android:tag="4"
+                app:srcCompat="@drawable/img_4" />
+
+            <ImageView
+                android:id="@+id/iv5"
+                style="@style/casillaPuzle"
+                android:tag="5"
+                app:srcCompat="@drawable/img_5" />
+        </LinearLayout>
+
+        <LinearLayout style="@style/containerFilaCasillas">
+
+            <ImageView
+                android:id="@+id/iv6"
+                style="@style/casillaPuzle"
+                android:tag="6"
+                app:srcCompat="@drawable/img_6" />
+
+            <ImageView
+                android:id="@+id/iv7"
+                style="@style/casillaPuzle"
+                android:tag="7"
+                app:srcCompat="@drawable/img_7" />
+
+            <ImageView
+                android:id="@+id/iv8"
+                style="@style/casillaPuzle"
+                android:tag="8"
+                app:srcCompat="@drawable/img_8" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCasillasCorrectas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/msg_casillas_correctas"
+            android:textColor="@color/design_default_color_primary_dark"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnNuevaPartida"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_nueva_partida"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>

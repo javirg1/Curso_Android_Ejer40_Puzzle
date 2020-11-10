@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Puzzle</string>
+    <string name="app_title">Resuelve el puzzle</string>
+    <string name="msg_final_partida">Puzzle finalizado!!!</string>
+    <string name="btn_nueva_partida">Nueva Partida</string>
+    <string name="msg_casillas_correctas">Casillas correctas: %d</string>
+
+</resources>
