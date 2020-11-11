@@ -1,8 +1,14 @@
 <resources>
+    <!--Títulos-->
     <string name="app_name">Puzzle</string>
     <string name="app_title">Resuelve el puzzle</string>
+    <string name="title_inicio_activity">Selecciona un puzzle</string>
+
+    <!--Mensajes-->
     <string name="msg_final_partida">Puzzle finalizado!!!</string>
-    <string name="btn_nueva_partida">Nueva Partida</string>
     <string name="msg_casillas_correctas">Casillas correctas: %d</string>
+
+    <!--Recursos-->
+    <string name="btn_nueva_partida">Nueva Partida</string>
 
 </resources>

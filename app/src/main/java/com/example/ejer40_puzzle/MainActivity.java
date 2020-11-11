@@ -3,6 +3,7 @@ package com.example.ejer40_puzzle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
@@ -115,6 +116,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             if (contadorClicks == 1) {
 
+                // Resaltamos la primera casilla clicada con un borde (archivo borde.xml)
+                Drawable highlight = getResources().getDrawable( R.drawable.borde);
+                casilla_clicada.setBackground(highlight);
+
                 // Identificamos la casilla clicada
                 posicion_clicada1 = Integer.valueOf(casilla_clicada.getTag().toString());
                 Log.e(TAG, "posicion_clicada1 " + posicion_clicada1);
@@ -127,6 +132,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 casillaClicada1 = casilla_clicada;
             }
             if (contadorClicks == 2) {
+
+                // Quitamos el borde que resalta la primera casilla clicada
+                casillaClicada1.setBackground(null);
 
                 // Identificamos la casilla clicada
                 posicion_clicada2 = Integer.valueOf(casilla_clicada.getTag().toString());
